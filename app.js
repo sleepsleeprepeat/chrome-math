@@ -1,5 +1,5 @@
 const SNIPPET_URL =
-    "https://raw.githubusercontent.com/sleepsleeprepeat/chrome-math/master/math_snippets.json";
+    "https://raw.githubusercontent.com/sleepsleeprepeat/chrome-math/master/snippets.json";
 
 async function fetchSnippets() {
     let res = await fetch(SNIPPET_URL);
