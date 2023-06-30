@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Math Snippets",
+    "version": "1.0",
+    "description": "Math Snippets for Moodle",
+
+    "permissions": ["contextMenus"],
+
+    "background": {
+        "service_worker": "context_menu.js"
+    }
+}
