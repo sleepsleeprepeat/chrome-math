@@ -7,6 +7,6 @@
     "permissions": ["contextMenus"],
 
     "background": {
-        "service_worker": "context_menu.js"
+        "service_worker": "app.js"
     }
 }

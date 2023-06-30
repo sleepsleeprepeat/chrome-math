@@ -7,7 +7,9 @@ async function fetchSnippets() {
     return snippets;
 }
 
-function createContextMenu(snippets) {
+async function createContextMenu(snippets) {
+    snippets = await fetchSnippets();
+
     chrome.contextMenus.create({
         title: "Math-Snippet hinzufügen",
         id: "math_snippet",
@@ -25,13 +27,9 @@ function createContextMenu(snippets) {
                 title: item.title,
                 parentId: category.id,
                 id: item.id,
-                onclick: () => {
-                    // insert snippet at caret position
-                    chrome.tabs.executeScript({
-                        code: `document.execCommand("insertText", false, "${item.snippet}");`,
-                    });
-                },
             });
         });
     });
 }
+
+createContextMenu();
