@@ -1,16 +1,16 @@
 [
     {
-        "category_title": "DGL",
-        "category_id": "dgl",
+        "title": "DGL",
+        "id": "dgl",
         "items": [
             {
-                "item_title": "charakteristische Gleichung",
-                "item_id": "charakteristische_gleichung",
+                "title": "charakteristische Gleichung",
+                "id": "charakteristische_gleichung",
                 "data": "h^2+()h+()"
             },
             {
-                "item_title": "2. Ordnung yn Ansatz",
-                "item_id": "yn_ansatz",
+                "title": "2. Ordnung yn Ansatz",
+                "id": "yn_ansatz",
                 "data": "A*e^(()*x)+B*e^(()*x)"
             }
         ]
