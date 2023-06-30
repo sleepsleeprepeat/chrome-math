@@ -1,14 +1,8 @@
 const SNIPPET_URL =
     "https://raw.githubusercontent.com/sleepsleeprepeat/chrome-math/master/snippets.json";
 
-async function fetchSnippets() {
-    let res = await fetch(SNIPPET_URL);
-    let snippets = await res.json();
-    return snippets;
-}
-
 async function createContextMenu(snippets) {
-    snippets = await fetchSnippets();
+    let snippets = await (await fetch(SNIPPET_URL)).json();
 
     chrome.contextMenus.create({
         title: "Math-Snippet hinzufügen",
@@ -30,6 +24,8 @@ async function createContextMenu(snippets) {
             });
         });
     });
+
+    // await registerEventlisteners(snippets);
 }
 
 createContextMenu();
