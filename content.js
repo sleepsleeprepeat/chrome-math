@@ -1,6 +1,8 @@
 function insertSnippet(snippet) {
+    console.log(snippet);
+
     // set snippet.data to clipboard
-    navigator.clipboard.writeText(snippet.data).then(function () {
+    navigator.clipboard.writeText(snippet.data).then(() => {
         // insert snippet.data
         document.execCommand("paste");
     });

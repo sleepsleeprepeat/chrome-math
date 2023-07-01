@@ -12,12 +12,17 @@
                 "title": "2. Ordnung yn Ansatz",
                 "id": "yn_ansatz",
                 "data": "A*e^(()*x)+B*e^(()*x)"
+            },
+            {
+                "title": "2. Ordnung yh Ansatz",
+                "id": "funktion",
+                "data": "A*cos(()*x)+B*sin(()*x)"
             }
         ]
     },
     {
         "title": "Laplace Funktions-Ableitungen",
-        "id": "laplace_ableitungen",
+        "id": "lp_ableitungen",
         "items": [
             {
                 "title": "Funktion",
@@ -43,6 +48,32 @@
                 "title": "4. Ableitung",
                 "id": "4_ableitung",
                 "data": "s^4*Y(s)-s^3*()-s^2*()-s*()-()"
+            }
+        ]
+    },
+    {
+        "title": "Laplace Grundtransformationen",
+        "id": "lp_grundtransformationen",
+        "items": [
+            {
+                "title": "t^n",
+                "id": "t^n",
+                "data": "()!/s^(()+1)"
+            },
+            {
+                "title": "e^(-at)",
+                "id": "e^(-at)",
+                "data": "1/(s+())"
+            },
+            {
+                "title": "sin(bt)",
+                "id": "sin(bt)",
+                "data": "()/(s^2+()^2)"
+            },
+            {
+                "title": "cos(bt)",
+                "id": "cos(bt)",
+                "data": "s/(s^2+()^2)"
             }
         ]
     }
