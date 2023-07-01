@@ -14,5 +14,36 @@
                 "data": "A*e^(()*x)+B*e^(()*x)"
             }
         ]
+    },
+    {
+        "title": "Laplace Funktions-Ableitungen",
+        "id": "laplace_ableitungen",
+        "items": [
+            {
+                "title": "Funktion",
+                "id": "funktion",
+                "data": "Y(s)"
+            },
+            {
+                "title": "1. Ableitung",
+                "id": "1_ableitung",
+                "data": "s*Y(s)-()"
+            },
+            {
+                "title": "2. Ableitung",
+                "id": "2_ableitung",
+                "data": "s^2*Y(s)-s*()-()"
+            },
+            {
+                "title": "3. Ableitung",
+                "id": "3_ableitung",
+                "data": "s^3*Y(s)-s^2*()-s*()-()"
+            },
+            {
+                "title": "4. Ableitung",
+                "id": "4_ableitung",
+                "data": "s^4*Y(s)-s^3*()-s^2*()-s*()-()"
+            }
+        ]
     }
 ]

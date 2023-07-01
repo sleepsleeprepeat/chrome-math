@@ -4,9 +4,16 @@
     "version": "1.0",
     "description": "Math Snippets for Moodle",
 
-    "permissions": ["contextMenus"],
+    "permissions": ["tabs", "activeTab", "contextMenus", "clipboardRead", "clipboardWrite"],
 
     "background": {
-        "service_worker": "app.js"
-    }
+        "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://lms.fh-kiel.de/*"],
+            "js": ["content.js"]
+        }
+    ]
 }
